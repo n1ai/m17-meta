@@ -1,5 +1,5 @@
 # m17-meta
-Various files useful when working with the M17 Protocol
+Various files that may be useful when working with the M17 Protocol
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
