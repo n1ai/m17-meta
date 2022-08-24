@@ -143,3 +143,27 @@ Notes:
   - rrc file is also upsampled by 10x to generate the rrc waveform
   - This explains a factor of 80
 
+--------------------------------------------------------------------------------
+Recording of reception of full countdown file
+
+The gzip-compressed IQ format wave file of apollo_countdown.bin as
+send by the m17-gnuradio flowgraph by hackrf to rtl-sdr dongle and
+sdrplusplus has been added.
+
+It is compressed because it's size was 556M uncompressed but 85M
+compressed.  The size is large because sdrplusplus recorded 2.4M
+of spectrum.
+
+After decompressing with gunzip, sox should show the following info:
+
+$ sox --i apollo_countdown_m17_iq.wav 
+Input File     : 'apollo_countdown_m17_iq.wav'
+Channels       : 2
+Sample Rate    : 2.4e+06
+Precision      : 16-bit
+Duration       : 00:01:00.65 = 145557248 samples ~ 4548.66 CDDA sectors
+File Size      : 582M
+Bit Rate       : 76.8M
+Sample Encoding: 16-bit Signed Integer PCM
+
+
