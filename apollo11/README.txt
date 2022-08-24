@@ -1,7 +1,6 @@
 ================================================================================
 Exploring M17-related data formats using NASA Apollo 11 Audio
 ================================================================================
---------------------------------------------------------------------------------
 Permission to use NASA source material
 
 Reference: https://www.nasa.gov/multimedia/guidelines/index.html
@@ -111,7 +110,9 @@ References: See previous section
 Notes:
   - sym format is M17 symbols (+3, +1, -1, -3) encoded as signed 8-bit values 
     at the rate of 4800 symbols per second.
-$ cat apollo11_3210.aud | m17-mod -S N0CALL --sym > apollo11_3210.sym --------------------------------------------------------------------------------
+$ cat apollo11_3210.aud | m17-mod -S N0CALL --sym > apollo11_3210.sym 
+
+--------------------------------------------------------------------------------
 Creating rrc file from shorter aud file 
 
 References: See previous section
